@@ -1,0 +1,207 @@
+@media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 56.2%;
+    }
+    .hero-heading {
+      width: fit-content;
+      font-size: 7rem;
+      padding: 0 2.4rem;
+      text-align: center;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+      padding: 0 2.4rem;
+    }
+  
+    .more-heading {
+      max-width: 100%;
+    }
+  
+    .text {
+      max-width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 56.25em) {
+    .hero-heading {
+      width: fit-content;
+      font-size: 7rem;
+      padding: 0 2.4rem;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .cta {
+      padding: 4.8rem 3.2rem;
+    }
+  
+    .contact-details div {
+      padding: 4.8rem 3.2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 42.5em) {
+    /* html {
+      font-size: 50%;
+    } */
+    header {
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.664),
+          rgba(13, 15, 44, 0.644)
+        ),
+        url("assets/images/overlay.png"), url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+    }
+    main {
+      display: block;
+      width: 100vw;
+      margin-top: 20rem;
+      text-align: center;
+    }
+    .hero-heading {
+      font-weight: 900;
+      font-size: 5.5rem;
+      text-align: left;
+    }
+  
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: #eee;
+      height: 100vh;
+      width: 75vw;
+      transform: translateX(100%);
+      transition: all 0.25s ease-in;
+      z-index: 10;
+    }
+  
+    .nav-active {
+      background-color: unset;
+    }
+  
+    .nav {
+      max-height: unset;
+    }
+  
+    .nav,
+    .nav-left,
+    .nav-right {
+      display: flex;
+      flex-direction: column;
+      overflow: unset;
+      color: #353535;
+    }
+  
+    .nav-left {
+      margin-bottom: 1px solid #353535;
+    }
+  
+    .toggle {
+      display: block;
+      z-index: 1000000;
+    }
+  
+    .show-toggle {
+      opacity: 1;
+    }
+  
+    #toggle {
+      opacity: 0;
+      z-index: 10000000000;
+    }
+  
+    #toggle:checked ~ nav {
+      transform: translateX(0);
+      transition: all 0.25s ease-in;
+    }
+  
+    .heading {
+      font-weight: 900;
+      text-align: center;
+      line-height: 1.2;
+      letter-spacing: 0.11rem;
+      font-size: 5.2rem;
+      max-width: 100%;
+      margin-top: 4.6rem;
+    }
+  
+    .more-article {
+      flex-direction: column;
+    }
+  
+    .more-article::before {
+      display: none;
+    }
+  
+    aside .container {
+      flex-direction: column;
+    }
+  
+    .cta,
+    .contact-details {
+      max-width: 100%;
+      width: 100%;
+      border-top: 2px solid rgb(179, 179, 179);
+    }
+  
+    .contact-details div {
+      padding-top: 2.4rem;
+      padding-bottom: 2.4rem;
+    }
+    .contact-details div::before {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 30.25em) {
+    header {
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.664),
+          rgba(13, 15, 44, 0.644)
+        ),
+        url("assets/images/overlay.png"), url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+    }
+  
+    .heading {
+      font-size: 5rem;
+    }
+    main {
+      display: block;
+      width: 100vw;
+      margin-top: 20rem;
+      text-align: center;
+    }
+    .hero-heading {
+      font-weight: 900;
+  
+      font-size: 4.5rem;
+      text-align: left;
+    }
+  
+    .time-stamp::after,
+    .time-stamp::before {
+      display: none;
+    }
+  
+    .page-number ul li {
+      display: none;
+    }
+  
+    .page-number ul li:last-child {
+      display: block;
+    }
+  }
+  

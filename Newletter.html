@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="NewsletterStyle.css" />
+  <link rel="stylesheet" href="NLBodyStyle.css" />
+ <title>Document</title>
+ </head>
+ 
+ <body>
+ <nav class="navbar">
+ <!-- LOGO -->
+ <div class="logo">&nbsp;</div>
+ <!-- NAVIGATION MENU -->
+ <ul class="nav-links">
+ <!-- USING CHECKBOX HACK -->
+ <input type="checkbox" id="checkbox_toggle" />
+ <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+ <!-- NAVIGATION MENUS -->
+ <div class="menu">
+ <li><a href="index.html">Home</a></li>
+ <li><a href="MyGallery.html">My Gallery</a></li>
+ <li><a href="Newletter.html">Newsletter</a></li>
+ 
+ </div>
+ </ul>
+ </nav>
+  <div class="container">
+        <div class="box">
+        <h1>wolaa!!</h1>
+        <p>A simple template for telling the world when you'll launch <br> your big thing. Designed and built by <span>@AmaanLaskar</span></p>
+        <div class="action">
+        <input type="email" name="email" id="" placeholder="Email Address">
+        <button class="btn">Sign Up</button>
+        <p id="overlay">Thank You!</p>
+    </div>
+
+    <script>
+    var button = document.querySelector('.btn').addEventListener("click", () => {
+       document.querySelector('#overlay').style.display = "block";
+    })
+</script>
+
+ </body>
+</html>

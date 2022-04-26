@@ -1,0 +1,117 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-blend-mode: darken;
+            background: #000000;
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            line-height: 26.4px;
+            /* filter: opacity(0.1); */
+        }
+        .container{
+            
+            background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616__480.jpg');
+           
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: darken;
+            height: 100vh;
+            color: #ffffff;
+            
+        }
+        
+        ul{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 10px;
+        }
+        .fa{
+            color: gray;
+            font-size: 1.2rem;
+        }
+        .box{
+            position: absolute;
+            bottom: 34%;
+            left: 3%;
+            opacity:1;
+        }
+        .box h1{
+            font-size: 52px;
+            font-weight: 65px;
+            font-style: normal;
+            color: #ffffff;
+            font-family: Roboto, sans-serif;
+        }
+        p{
+            font-weight: 500;
+            word-spacing: 1;
+            color: #fff;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+        input{
+            background: transparent #000000;
+            width: 12rem;
+            padding: .5rem;
+            outline: none;
+        }
+        button{
+            width: 5rem;
+            padding: .5rem;
+            background: #1cb495;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        .footer{
+            position: absolute;
+            bottom: 4%;
+            left: 3%;
+        }
+    #overlay{
+        display: none;
+    }
+        /* MEDIA QUERY */
+        @media only screen and (max-width: 768px){
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 50%;
+            }
+            .box h1, p{
+                display: none;
+            }
+            .action{
+                flex-direction: column;
+                display: flex;
+                width: 100vw;
+            }
+            input{
+                margin-bottom: .5rem;
+                width: 90%;
+               
+            }
+            button{
+                width: 90%;
+                padding: .5rem;
+                background: #1cb495;
+                border-radius: 5px;
+                cursor: pointer;
+                
+            }
+            .box{
+                position: absolute;
+                top: 40%;
+                left: 3%;
+                opacity: 1;
+            }
+        }

@@ -1,0 +1,99 @@
+ /* UTILITIES */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: cursive;
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ font-family: Roboto, sans-serif;
+    font-size: 0.5rem;
+    font-weight: 50;
+    letter-spacing: 1.2px;
+    padding: .5rem .5rem;
+  background: linear-gradient(
+      to right,
+      rgba(71, 69, 69, 0.5),
+      rgba(88, 88, 88, 0.5)
+    );
+    
+
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+/* LOGO */
+.logo {
+ font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: #0f0f0f;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:rgb(44, 46, 46);
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 2px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#0e0f0f;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+
+
+
+}
